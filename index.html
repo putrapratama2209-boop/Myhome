@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruang Kenangan Kita | Tama &amp; Putri Meyriza</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="hearts-bg" aria-hidden="true"></div>
+
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a href="#" class="brand">Ruang Kita ♥</a>
+            <nav aria-label="Navigasi utama">
+                <ul class="nav-links">
+                    <li><a href="#cerita">Cerita Kita</a></li>
+                    <li><a href="#galeri">Galeri Foto</a></li>
+                    <li><a href="#momen">Momen</a></li>
+                    <li><a href="#pesan">Pesan</a></li>
+                </ul>
+            </nav>
+            <button id="musicToggle" class="music-btn" type="button" aria-label="Putar atau jeda lagu">
+                <span id="musicIcon">♪</span>
+                <span id="musicLabel">Putar Lagu</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero & Penghitung Waktu -->
+        <section id="cerita" class="hero">
+            <div class="container hero-card">
+                <span class="badge">Sebuah Catatan Kecil untuk Orang Tersayang</span>
+                <h1>Untuk <span>Putri Meyriza</span>, dari <span>Tama</span></h1>
+                <p class="quote">
+                    "Di antara banyak hal yang berubah dan sibuknya hari-hari, pulang ke cerita kita selalu jadi tempat paling menenangkan."
+                </p>
+
+                <p class="counter-intro">Kita sudah berjalan bersama selama:</p>
+                <div class="counter-inline" id="timeCounter">
+                    <div class="time-pill"><strong id="days">0</strong><span>Hari</span></div>
+                    <div class="time-pill"><strong id="hours">00</strong><span>Jam</span></div>
+                    <div class="time-pill"><strong id="minutes">00</strong><span>Menit</span></div>
+                    <div class="time-pill"><strong id="seconds">00</strong><span>Detik</span></div>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#galeri" class="btn btn-primary">Lihat Foto Kenangan</a>
+                    <button id="openSecretBtn" class="btn btn-secondary" type="button">Buka Pesan Rahasia</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tentang Kita -->
+        <section id="momen" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="tag">TENTANG KITA</span>
+                    <h2>Hal-Hal Sederhana yang Selalu Kusuka</h2>
+                    <p class="section-sub">Potongan kecil yang bikin kebersamaan kita terasa hangat dan selalu dirindukan.</p>
+                </div>
+
+                <div class="highlights-grid">
+                    <article class="info-card">
+                        <h3>Obrolan Tanpa Batas</h3>
+                        <p>Dari cerita paling receh sampai rencana masa depan, selalu nyambung dan bikin lupa waktu.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Tawa di Sela Kesibukan</h3>
+                        <p>Saat hari terasa panjang dan melelahkan, satu senyuman atau kabarmu saja sudah cukup melegakan.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Tumbuh Bersama</h3>
+                        <p>Saling menguatkan, saling memahami, dan terus belajar menjadi lebih baik hari demi hari.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeri 9 Foto -->
+        <section id="galeri" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="tag">GALERI FOTO</span>
+                    <h2>Potret Kita &amp; Cerita di Baliknya</h2>
+                    <p class="section-sub">Klik foto mana saja untuk melihatnya lebih besar beserta catatan kenangannya.</p>
+                </div>
+
+                <div class="photo-grid">
+                    <!-- Foto 1 -->
+                    <figure class="photo-card" data-img="assets/foto-kita1.jpeg" data-caption="Momen seru dan ekspresif bareng Putri—selalu ada tawa dan cerita menyenangkan di setiap waktu yang kita habiskan bersama.">
+                        <div class="img-frame">
+                            <img src="assets/foto-kita1.jpeg" alt="Foto Tama dan Putri Meyriza 1" />
+                        </div>
+                        <figcaption>
+                            <strong>Keseruan Berdua ♥</strong>
+                            <span>Ekspresi favorit yang selalu bikin kangen.</span>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Foto 2 -->
+                    <figure class="photo-card" data-img="assets/foto-kita2.jpeg" data-caption="Momen jalan dan eksplor tempat baru bareng kamu—selalu ada cerita seru dan rasa hangat yang bikin betah.">
+                        <div class="img-frame">
+                            <img src="assets/foto-kita2.jpeg" alt="Foto Tama dan Putri Meyriza 2" />
+                        </div>
+                        <figcaption>
+                            <strong>Perjalanan &amp; Jalan-Jalan</strong>
+                            <span>Langkah kecil yang penuh tawa dan cerita.</span>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Foto 3 -->
+                    <figure class="photo-card" data-img="assets/foto-kita3.jpeg" data-caption="Detail kecil seperti bunga, makanan enak, atau obrolan santai yang terasa istimewa karena dijalani bersamamu.">
+                        <div class="img-frame">
+                            <img src="assets/foto-kita3.jpeg" alt="Foto Tama dan Putri Meyriza 3" />
+                        </div>
+                        <figcaption>
+                            <strong>Hal Sederhana Favorit</strong>
+                            <span>Detail kecil yang selalu berhasil bikin senyum.</span>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Foto 4 -->
+                    <figure class="photo-card" data-img="assets/foto-kita4.jpeg" data-caption="Potret hangat di sela aktivitas harian yang selalu berhasil bikin hari terasa lebih ringan.">
+                        <div class="img-frame">
+                            <img src="assets/foto-kita4.jpeg" alt="Foto Tama dan Putri Meyriza 4" />
+                        </div>
+                        <figcaption>
+                            <strong>Hangatnya Kebersamaan</strong>
+                            <span>Senyum yang menenangkan di setiap waktu.</span>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Foto 5 -->
+                    <figure class="photo-card" data-img="assets/foto-kita5.jpeg" data-caption="Salah satu sudut kenangan yang bikin selalu ingin kembali mengingat bagaimana kita saling menguatkan.">
+                        <div class="img-frame">
+                            <img src="assets/foto-kita5.jpeg" alt="Foto Tama dan Putri Meyriza 5" />
+                        </div>
+                        <figcaption>
+                            <strong>Cerita yang Tumbuh</strong>
+                            <span>Langkah demi langkah yang penuh makna.</span>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Foto 6 -->
+                    <figure class="photo-card" data-img="assets/foto-kita6.jpeg" data-caption="Momen santai dan penuh tawa yang rasanya selalu ingin diulang lagi kapan saja.">
+                        <div class="img-frame">
+                            <img src="assets/foto-kita6.jpeg" alt="Foto Tama dan Putri Meyriza 6" />
+                        </div>
+                        <figcaption>
+                            <strong>Tawa Tanpa Jeda</strong>
+                            <span>Suasana paling nyaman yang pernah kurasa.</span>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Foto 7 -->
+                    <figure class="photo-card" data-img="assets/foto-kita7.jpeg" data-caption="Potret manis yang selalu menyimpan rasa syukur karena bisa berjalan sejauh ini bersamamu.">
+                        <div class="img-frame">
+                            <img src="assets/foto-kita7.jpeg" alt="Foto Tama dan Putri Meyriza 7" />
+                        </div>
+                        <figcaption>
+                            <strong>Rasa Syukur Kecil</strong>
+                            <span>Kenangan manis yang selalu kujaga.</span>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Foto 8 -->
+                    <figure class="photo-card" data-img="assets/foto-kita8.jpeg" data-caption="Salah satu momen berkesan yang bikin selalu bersyukur punya cerita bersamamu.">
+                        <div class="img-frame">
+                            <img src="assets/foto-kita8.jpeg" alt="Foto Tama dan Putri Meyriza 8" />
+                        </div>
+                        <figcaption>
+                            <strong>Momen Penuh Makna</strong>
+                            <span>Cerita yang selalu ingin dikenang.</span>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Foto 9 -->
+                    <figure class="photo-card" data-img="assets/foto-kita9.jpeg" data-caption="Satu dari banyak alasan mengapa kebersamaan kita selalu terasa berharga di setiap musim.">
+                        <div class="img-frame">
+                            <img src="assets/foto-kita9.jpeg" alt="Foto Tama dan Putri Meyriza 9" />
+                        </div>
+                        <figcaption>
+                            <strong>Selalu Berarti ♥</strong>
+                            <span>Harapan baik untuk cerita-cerita berikutnya.</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pesan -->
+        <section id="pesan" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="tag">CATATAN UNTUKMU</span>
+                    <h2>Pesan Kecil dari Tama</h2>
+                </div>
+                <article class="letter-card">
+                    <p>Untuk Putri Meyriza,</p>
+                    <p>
+                        Terima kasih sudah hadir dan memberi warna hangat di begitu banyak hari-hariku.
+                        Di tengah kesibukan dan berbagai proses yang sedang dijalani, punya ruang cerita
+                        bersamamu adalah hal yang selalu kusyukuri.
+                    </p>
+                    <p>
+                        Semoga ke depannya kita bisa terus melangkah dengan saling menjaga, saling mendukung,
+                        dan mengumpulkan lebih banyak kenangan indah bersama.
+                    </p>
+                    <p class="signature">Selalu sayang, Tama ♥</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Ruang Kenangan Tama &amp; Putri Meyriza ♥</p>
+        </div>
+    </footer>
+
+    <!-- Modal Perbesar Foto -->
+    <div id="lightboxModal" class="modal" role="dialog" aria-modal="true" aria-label="Foto diperbesar">
+        <div class="modal-content lightbox-content">
+            <button id="closeLightbox" class="close-modal" type="button" aria-label="Tutup">&times;</button>
+            <img id="lightboxImg" src="" alt="Foto diperbesar" />
+            <p id="lightboxCaption"></p>
+        </div>
+    </div>
+
+    <!-- Modal Pesan Rahasia -->
+    <div id="secretModal" class="modal" role="dialog" aria-modal="true" aria-label="Pesan rahasia">
+        <div class="modal-content">
+            <button id="closeSecret" class="close-modal" type="button" aria-label="Tutup">&times;</button>
+            <h3>Pesan Rahasia untuk Putri ♥</h3>
+            <p>
+                Kamu hebat banget sudah melewati banyak hal sampai hari ini. Jangan lupa istirahat,
+                jaga kesehatan, dan ingat bahwa Tama selalu mendukungmu.
+            </p>
+            <button id="okSecretBtn" class="btn btn-primary" type="button">Peluk Hangat ♥</button>
+        </div>
+    </div>
+
+    <audio id="bgMusic" loop preload="none">
+        <source src="assets/lagu-kita.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
